@@ -17,13 +17,13 @@ body {
     color: #fff;
     padding: 0 40px;
     margin-top: 0;
-    margin-bottom: 50px;   
+    margin-bottom: 50px;
 }
 
 .section-content h4 {
     font-size: 30px;
     text-shadow: 0 2px 3px rgba(0,0,0,.4);
-    color: #fff;    
+    color: #fff;
 }
 
 .section-content hr {
@@ -71,25 +71,25 @@ body {
 
 /*Navigation Bar*/
 
-.jumbotron .scroll-down { 
-    height: 80px; 
-    width: 130px; 
-    display: block; 
-    position: absolute; 
-    bottom: 0px; 
-    right: 5%; 
-    background-color: #222222; 
-    text-align: center; 
+.jumbotron .scroll-down {
+    height: 80px;
+    width: 130px;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 5%;
+    background-color: #222222;
+    text-align: center;
     z-index: 6;
     border: 1px solid white;
 }
 
-.jumbotron .scroll-down .glyphicon { 
-	color: #FFFFFF; 
-	font-size: 30px; 
-	padding-right: 2px; 
-	padding-top: 20px; 
-    
+.jumbotron .scroll-down .glyphicon {
+	color: #FFFFFF;
+	font-size: 30px;
+	padding-right: 2px;
+	padding-top: 20px;
+
     animation-name: wiggle;
 	animation-duration: 1.2s;
 	animation-timing-function: linear;
@@ -111,8 +111,8 @@ body {
 	}
 }
 
-.jumbotron .scroll-down:hover .glyphicon { 
-    padding-top: 25px; 
+.jumbotron .scroll-down:hover .glyphicon {
+    padding-top: 25px;
 }
 
 .jumbotron {
@@ -122,12 +122,15 @@ body {
 .jumbotron .navbar {
     border: 1px solid white;
     background-color: #222222;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
     right: 5%;
     width: 130px;
     height: 470px;
     z-index: 999;
+    overflow-y: scroll;
+
 }
 
 .jumbotron .navbar .navbar-collapse {
@@ -163,19 +166,19 @@ body {
 }
 
 .jumbotron .navbar .nav > li a:hover, .navbar .nav > li a:focus {
-    color: #999999   
+    color: #999999
 }
 
-.jumbotron .navbar-default .navbar-nav > .active > a, .navbar-default 
-.navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { 
-    background: cornflowerblue; 
+.jumbotron .navbar-default .navbar-nav > .active > a, .navbar-default
+.navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background: cornflowerblue;
     width: 128px;
-    color: #FFFFFF; 
+    color: #FFFFFF;
 }
 
 .jumbotron .navbar-default .navbar-toggle:hover .icon-bar,
-.navbar-default .navbar-toggle:focus .icon-bar { 
-    background: #222222; 
+.navbar-default .navbar-toggle:focus .icon-bar {
+    background: #222222;
 }
 
 /*profile-intro section*/
@@ -273,7 +276,7 @@ body {
     margin-right: 20px;
 }
 
-#fullstack .col-md-6 p, 
+#fullstack .col-md-6 p,
 #bachelors .col-md-6 p {
     padding-bottom: 30px;
 }
@@ -854,59 +857,59 @@ body {
     padding-top: 5px;
 }
 
-#skills ul > li:hover { 
-    background: lightgray; 
+#skills ul > li:hover {
+    background: lightgray;
 }
 
-#skills ul > li .ability-title { 
-    display: inline-block; 
-    width: 60%; 
+#skills ul > li .ability-title {
+    display: inline-block;
+    width: 60%;
 }
 
 #skills ul > li .ability-score {
-    float: right; 
+    float: right;
 }
 
-#skills ul > li .ability-score .glyphicon-star { 
-	color: #DFE0E0; 
-	font-size: 18px; 
-	 
+#skills ul > li .ability-score .glyphicon-star {
+	color: #DFE0E0;
+	font-size: 18px;
+
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 
-#skills ul > li .ability-score span.glyphicon.glyphicon-star.filled { 
+#skills ul > li .ability-score span.glyphicon.glyphicon-star.filled {
     color: blue;
 }
 
-#skills ul > li:hover .ability-score .glyphicon { 
-    margin-left: 2px; 
-} 
+#skills ul > li:hover .ability-score .glyphicon {
+    margin-left: 2px;
+}
 
 /* Languages section */
-#skills ul > li .language-title { 
-    display: inline-block; 
-    width: 60%; 
+#skills ul > li .language-title {
+    display: inline-block;
+    width: 60%;
 }
 
 #skills ul > li .language-score {
-    float: right; 
+    float: right;
 }
 
-#skills ul > li .language-score .glyphicon-star { 
-	color: #DFE0E0; 
-	font-size: 18px; 
-	 
+#skills ul > li .language-score .glyphicon-star {
+	color: #DFE0E0;
+	font-size: 18px;
+
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 
-#skills ul > li .language-score span.glyphicon.glyphicon-star.filled { 
-    color: blue; 
+#skills ul > li .language-score span.glyphicon.glyphicon-star.filled {
+    color: blue;
 }
 
 /* Github account button */
@@ -949,9 +952,9 @@ body {
 
 #projects figure h3 {
     font-size: 30px;
-    color: #FFF; 
-    font-weight: 600; 
-    margin-bottom: 5px; 
+    color: #FFF;
+    font-weight: 600;
+    margin-bottom: 5px;
 }
 
 #projects figure p {
@@ -964,10 +967,10 @@ body {
 }
 
 
-#projects figure p > strong { 
-    width: 60px; 
-    display: inline-block; 
-    margin: 0px; 
+#projects figure p > strong {
+    width: 60px;
+    display: inline-block;
+    margin: 0px;
 }
 
 #projects figure img {
@@ -995,7 +998,7 @@ body {
     height: 100%;
     width: 100%;
 }
-#projects figure .icon { 
+#projects figure .icon {
 	background: #22A39F;
 	position: absolute;
 	top: 0px;
@@ -1136,6 +1139,6 @@ figure.effect:hover p {
       -webkit-background-size: 150% auto;
       background-attachment: scroll;
     }
-	
+
 	.jumbotron .lead { display: none; }
 }
